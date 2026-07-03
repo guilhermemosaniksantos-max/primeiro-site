@@ -1,80 +1,25 @@
-meu-projeto/
-│
-├── index.html
-├── style.css
-├── script.js
-└── imagens/
-    ├── natureza.jpg
-    ├── praia.jpg
-    └── montanha.jpg<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Fotos</title>
-
+    <title>Minhas Tarefas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Galeria de Paisagens</h1>
-</header>
+    <div class="todo-container">
+        <h2>📝 Minhas Tarefas</h2>
+        
+        <div class="input-area">
+            <input type="text" id="nova-tarefa" placeholder="Digite uma nova tarefa...">
+            <button id="btn-adicionar">Add</button>
+        </div>
 
-<main class="galeria">
-
-    <div class="card">
-        <img src="imagens/natureza.jpg" alt="Natureza">
-
-        <h2>Natureza</h2>
-
-        <p>Uma linda paisagem natural.</p>
-
-        <button class="like-btn">
-            ❤️ Curtir
-        </button>
-
-        <p>Likes:
-            <span class="contador">0</span>
-        </p>
+        <ul id="lista-tarefas">
+            </ul>
     </div>
 
-    <div class="card">
-        <img src="imagens/praia.jpg" alt="Praia">
-
-        <h2>Praia</h2>
-
-        <p>Uma bela praia ao pôr do sol.</p>
-
-        <button class="like-btn">
-            ❤️ Curtir
-        </button>
-
-        <p>Likes:
-            <span class="contador">0</span>
-        </p>
-    </div>
-
-    <div class="card">
-        <img src="imagens/montanha.jpg" alt="Montanha">
-
-        <h2>Montanha</h2>
-
-        <p>Vista incrível das montanhas.</p>
-
-        <button class="like-btn">
-            ❤️ Curtir
-        </button>
-
-        <p>Likes:
-            <span class="contador">0</span>
-        </p>
-    </div>
-
-</main>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
